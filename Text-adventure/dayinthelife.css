@@ -1,0 +1,63 @@
+body {
+
+background-color:#F3F3F3;
+text-align: center;
+font-family: courier;
+
+}
+
+
+
+p::before {
+  counter-increment: number -0;
+  content: "Dragon attacks today: " counter(number) ;
+}
+
+h1::before {
+  counter-increment: number;
+  content: "Dragon attacks today: " counter(number) ;
+}
+
+
+h2{
+	border: 5px #F7B03C;
+	margin-top: 100px;
+	margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: white;
+	text-align: center;
+	color: #23A0C8 ;
+	font-weight: bold;
+	border-style: dotted;
+	counter-reset: number;
+}
+
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+	
+a:link, a:visited {
+  background-color:#4CAF50;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #4CAF50;
+}
