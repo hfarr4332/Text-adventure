@@ -1,0 +1,81 @@
+body {
+
+background-color:#F3F3F3;
+text-align: center;
+font-family: courier;
+
+}
+
+
+
+
+p::before{
+  counter-increment: number -0;
+  content: "Dragon attacks today: " counter(number) ;
+}
+
+h1::before {
+  counter-increment: number;
+  content: "Dragon attacks today: " counter(number);
+}
+h3::before {
+  counter-increment: number;
+  content: "Donkey attacks today: " counter(number) ;
+}
+h5::before {
+  counter-increment: number-0;
+  content: "Donkey attacks today: " counter(number) ;
+}
+
+h2{
+	border: 5px #F7B03C;
+	margin-top: 100px;
+	margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: white;
+	text-align: center;
+	color: #23A0C8 ;
+	font-weight: bold;
+	border-style: dotted;
+	counter-reset: number;
+}
+
+
+button {
+  background-color: #4CAF50;
+  font-family: sans-serif;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 20px;
+}
+  
+button:hover {
+  background-color: white;
+}
+  
+  
+
+
+	
+a:link, a:visited {
+  background-color:#4CAF50;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #4CAF50;
+}
